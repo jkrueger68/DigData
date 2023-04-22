@@ -2,6 +2,10 @@
 	text-align: center;
 }
 
+::-webkit-scrollbar {
+	width: 10px;
+}
+
 .App-logo {
 	height: 40vmin;
 	pointer-events: none;
@@ -41,11 +45,24 @@
 /*<!-------------------------------------------------------------------->*/
 
 .app-bg {
-	background-color: #000080b0;
-	position: fixed;
-	right: 0;
+	background-color: #000064d0;
+	height: inherit;
 	left: 0;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+	right: 0;
+	position: absolute;
 	background-size: cover;
+}
+
+/*<!-------------------------------------------------------------------->*/
+/*<!---------------------------GENERATE TEAM---------------------------->*/
+/*<!-------------------------------------------------------------------->*/
+
+.courtImg {
+	z-index: 0;
+}
+
+.courtText {
+	z-index: 1;
+	font-size: 1.2em;
+	margin-top: -178px;
 }
