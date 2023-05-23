@@ -66,3 +66,9 @@
 	font-size: 1.2em;
 	margin-top: -178px;
 }
+
+.submitDrops {
+	z-index: 1;
+	font-size: 1.2em;
+	margin-top: -140px;
+}

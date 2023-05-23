@@ -4,6 +4,9 @@ import NavBar from "./components/NavBar";
 import SelectedHome from "./components/selectedTour/SelectedHome"
 import CreateMatch from "./components/selectedTour/CreateMatch";
 import GenerateTeam from "./components/selectedTour/GenerateTeam";
+import SubmitScores from "./components/selectedTour/SubmitScores";
+import ManagePlayers from "./components/selectedTour/ManagePlayers";
+import PlayerScores from "./components/selectedTour/PlayerScores";
 import HomePage from "./components/homePage/HomePage";
 import Login from "./components/login/Login";
 import Container from "react-bootstrap/esm/Container";
@@ -27,6 +30,9 @@ function App() {
 							<Route path="/selected" element={<SelectedHome />}></Route>
 							<Route path="/selected/createMatch" element={<CreateMatch />}></Route>
 							<Route path="/selected/generate" element={<GenerateTeam />}></Route>
+							<Route path="/submitScores" element={<SubmitScores />}></Route>
+							<Route path="/managePlayers" element={<ManagePlayers />}></Route>
+							<Route path="/playerScores" element={<PlayerScores />}></Route>
 							{/* <Route path="/players" element={<Players />}></Route> */}
 						</Routes>
             </div>
