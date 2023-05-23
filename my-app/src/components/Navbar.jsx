@@ -23,6 +23,9 @@ function NavBar() {
 							<Nav.Link href="/selected">Selected</Nav.Link>
 							<Nav.Link href="/selected/createMatch">Create Match</Nav.Link>
 							<Nav.Link href="/selected/generate">Generate Match</Nav.Link>
+							<Nav.Link href="/submitScores">Submit Scores</Nav.Link>
+							<Nav.Link href="/managePlayers">Manage Players</Nav.Link>
+							<Nav.Link href="/playerScores">Player Scores</Nav.Link>
 						</Nav>
 					</Navbar.Collapse>
 				</Container>

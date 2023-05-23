@@ -19,7 +19,7 @@ function GenerateTeam() {
 							<Card.Title>Team #2</Card.Title>
 						</div>
 					</div>
-					<Figure className="w-100 ">
+					<Figure className="w-100">
 						<Figure.Image
 							alt="Court"
 							src={court}
@@ -27,28 +27,36 @@ function GenerateTeam() {
 							className="w-100 courtImg"
 						/>
 						<Figure.Caption className="courtText">
-							<div className="row container ">
-								<div className="col">
-									<div className="row justify-content-center">
-										Jonathon Nolden
+							<div className="container">
+								<div className="row">
+									<div className="col">
+										<div className="row justify-content-center fw-bolder text-white">
+											Jonathon Nolden
+										</div>
+										<div className="row justify-content-center">
+											Alex Cuevas
+										</div>
+										<div className="row justify-content-center">
+											Lena Nolden
+										</div>
+										<div className="row justify-content-center fw-bolder text-white">Bob Barker</div>
+										<div className="row justify-content-center">Player #5</div>
+										<div className="row justify-content-center">Player #6</div>
 									</div>
-									<div className="row justify-content-center">Alex Cuevas</div>
-									<div className="row justify-content-center">Lena Nolden</div>
-									<div className="row justify-content-center">Player #4</div>
-									<div className="row justify-content-center">Player #5</div>
-									<div className="row justify-content-center">Player #6</div>
-								</div>
-								<div className="col offset-2">
-									<div className="row justify-content-center">
-										Jason Krueger
+									<div className="col offset-2">
+										<div className="row justify-content-center">
+											Jason Krueger
+										</div>
+										<div className="row justify-content-center">
+											Peter Miron
+										</div>
+										<div className="row justify-content-center">
+											Cynthia Alvarado
+										</div>
+										<div className="row justify-content-center">Player #4</div>
+										<div className="row justify-content-center">Player #5</div>
+										<div className="row justify-content-center">Player #6</div>
 									</div>
-									<div className="row justify-content-center">Peter Miron</div>
-									<div className="row justify-content-center">
-										Cynthia Alvarado
-									</div>
-									<div className="row justify-content-center">Player #4</div>
-									<div className="row justify-content-center">Player #5</div>
-									<div className="row justify-content-center">Player #6</div>
 								</div>
 							</div>
 						</Figure.Caption>

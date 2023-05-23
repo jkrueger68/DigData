@@ -32,7 +32,7 @@ function HomePage() {
 							</div>
 							<br />
 							<div className="col">
-								<Button variant="danger shadow mt-2">View/Edit Match</Button>
+								<Button variant="warning shadow mt-2">View/Edit Match</Button>
 							</div>
                             <br />
 						</Card.Body>
