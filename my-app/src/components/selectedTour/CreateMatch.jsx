@@ -12,12 +12,10 @@ function CreateMatch() {
 			<div className="row justify-content-center mx-2">
 				<div className="col">
 					<Card border="secondary" className="shadow">
+						<Card.Header>
+							<Card.Title className="mt-2">Create a Match</Card.Title>
+						</Card.Header>
 						<Card.Body>
-							<div id="GENERATEBUTTON" className="row">
-								<div className="col">
-									<Button variant="primary shadow my-4">Generate Teams</Button>
-								</div>
-							</div>
 							<div id="DROPDOWNS" className="row mt-2">
 								<div className="col-2 d-none d-xxl-block empty"></div>
 								<div className="col">
@@ -68,8 +66,11 @@ function CreateMatch() {
 							<Card id="GAMESETTINGS" border="secondary" className="shadow">
 								<Card.Body>
 									<Card.Title> Game Setting</Card.Title>
-                                    <Table responsive="sm" className="table-striped-columns align-middle">
-									{/* <table className="table table-striped-columns align-middle"> */}
+									<Table
+										responsive="sm"
+										className="table-striped-columns align-middle"
+									>
+										{/* <table className="table table-striped-columns align-middle"> */}
 										<tbody className="table-group-divider">
 											<tr>
 												<th scope="row d-flex" />
@@ -188,8 +189,8 @@ function CreateMatch() {
 												</td>
 											</tr>
 										</tbody>
-									{/* </table> */}
-                                    </Table>
+										{/* </table> */}
+									</Table>
 								</Card.Body>
 							</Card>
 							<Button variant="primary shadow my-4">Add Player</Button>
@@ -233,7 +234,7 @@ function CreateMatch() {
 												<td>Advanced</td>
 												<td>69</td>
 											</tr>
-                                            <tr>
+											<tr>
 												<td>
 													<Form.Check aria-label="option 1" />
 												</td>
@@ -264,6 +265,11 @@ function CreateMatch() {
 									</Table>
 								</Card.Body>
 							</Card>
+							<div id="GENERATEBUTTON" className="row">
+								<div className="col">
+									<Button variant="primary shadow my-4">Generate Teams</Button>
+								</div>
+							</div>
 						</Card.Body>
 					</Card>
 				</div>

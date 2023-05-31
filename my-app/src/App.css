@@ -46,7 +46,7 @@
 
 .app-bg {
 	background-color: #000064d0;
-	height: inherit;
+	height: auto;
 	left: 0;
 	right: 0;
 	position: absolute;
