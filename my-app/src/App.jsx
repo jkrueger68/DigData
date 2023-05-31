@@ -33,7 +33,6 @@ function App() {
 							<Route path="/submitScores" element={<SubmitScores />}></Route>
 							<Route path="/managePlayers" element={<ManagePlayers />}></Route>
 							<Route path="/playerScores" element={<PlayerScores />}></Route>
-							{/* <Route path="/players" element={<Players />}></Route> */}
 						</Routes>
             </div>
 						<div className="col-2 d-none d-xxl-block empty" />

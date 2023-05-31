@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
@@ -7,13 +8,19 @@ import Table from "react-bootstrap/Table";
 import Form from "react-bootstrap/Form";
 
 function CreateMatch() {
+	const navigate = useNavigate();
+
+	const onGenerateTeamsClicked = () => {
+		navigate("/selected/generate");
+	};
+
 	return (
 		<React.Fragment>
 			<div className="row justify-content-center mx-2">
 				<div className="col">
 					<Card border="secondary" className="shadow">
-						<Card.Header>
-							<Card.Title className="mt-2">Create a Match</Card.Title>
+						<Card.Header className="shadow-sm">
+							<Card.Title className="mt-2">Create a Tournament</Card.Title>
 						</Card.Header>
 						<Card.Body>
 							<div id="DROPDOWNS" className="row mt-2">
@@ -267,7 +274,7 @@ function CreateMatch() {
 							</Card>
 							<div id="GENERATEBUTTON" className="row">
 								<div className="col">
-									<Button variant="primary shadow my-4">Generate Teams</Button>
+									<Button onClick={onGenerateTeamsClicked} variant="primary shadow my-4">Generate Teams</Button>
 								</div>
 							</div>
 						</Card.Body>
