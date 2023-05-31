@@ -19,7 +19,7 @@ function ManagePlayers() {
 	return (
 		<React.Fragment>
 			<Card>
-				<Card.Header>
+				<Card.Header className="shadow-sm">
 					<Card.Title className="mt-2">Manage Players</Card.Title>
 				</Card.Header>
 				<Card.Body>
@@ -28,7 +28,7 @@ function ManagePlayers() {
 					</Button>
 					{toggle && (
 						<>
-							<Card border="secondary" className="my-4">
+							<Card border="secondary" className="mb-3">
 								<Card.Body>
 									<div id="PLAYERNAME" className="row my-3">
 										<Stack direction="horizontal" gap={3}>

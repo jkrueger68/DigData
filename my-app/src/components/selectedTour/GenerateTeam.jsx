@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import court from "../../images/VolleyballCourt.jpg";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import Dropdown from "react-bootstrap/Dropdown";
@@ -7,9 +8,17 @@ import Figure from "react-bootstrap/Figure";
 import Button from "react-bootstrap/Button";
 
 function GenerateTeam() {
+	const navigate = useNavigate();
+
+	const onSubmitScoresClicked = () => {
+		navigate("/submitScores");
+	};
 	return (
 		<React.Fragment>
 			<Card>
+				<Card.Header className="shadow-sm">
+					<Card.Title className="mt-2">Confirm Players to Team</Card.Title>
+				</Card.Header>
 				<Card.Body id="COURTLAYOUT">
 					<div className="row">
 						<div className="col">
@@ -95,7 +104,7 @@ function GenerateTeam() {
 						</div>
 						<div className="col-2 d-none d-xxl-block empty"></div>
 					</div>
-					<Button variant="primary mt-4">Submit Scores</Button>
+					<Button onClick={onSubmitScoresClicked} variant="primary mt-4">Submit Scores</Button>
 				</Card.Body>
 			</Card>
 		</React.Fragment>
